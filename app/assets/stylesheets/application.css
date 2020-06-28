@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+
+.contents{
+	margin: 33px;
+}
+.flash{
+	margin: 33px 0 0 33px;
+	color: green;
+}
+.flash-alert{
+	margin: 33px 0 0 33px;
+	color: red;
+}
+.title{
+	font-size: 32px;
+	line-height: 1.8em;
+}
+.txt{
+	font-size: 15px;
+	line-height: 2rem;
+}
+.ttl{
+	font-size: 28px;
+	margin: 15px 0;
+}
+th{
+	/*width: 200px;*/
+	text-align: center;
+	padding-bottom: 10px;
+}
+.index-ttl{
+	padding: 0 15px 5px 0;
+	font-size: 14px;
+	line-height: 1.4em;
+}
+.index-txt{
+	padding: 0 15px 5px 0;
+	font-size: 14px;
+	line-height: 1.4em;
+}
+.btn{
+	display: inline-block;
+	padding: 0 15px 10px 0;
+	color: black;
+	text-decoration: none;
+}
+.txt-area{
+	margin-left: 20px;
+}
+.new-ttl{
+	margin: 10px 0;
+}
+.body-ttl{
+	margin: 10px 0;
+}
+.submit{
+	display: block;
+	margin-top: 20px;
+}
+.show-ttl,.show-txt{
+	margin: 30px 0 ;
+}

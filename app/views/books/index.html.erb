@@ -1,0 +1,28 @@
+<div class="contents">
+        <h1 class="ttl">Books</h1>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Body</th>
+                <th></th>
+            </tr>
+            <% @books.each do |book|%>
+            <tr>
+                <td class="index-ttl"><%= book.title%></td>
+                <td class="index-txt"><%= book.body%></td>
+                <td><%= link_to "Show", book_path(book),class: "btn" %></td>
+                <td><%= link_to "Edit", edit_book_path(book.id), class: "btn"%></td>
+                <td><%= link_to "Destroy",book_path(book),method: :delete, class: "btn",data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+            <%end%>
+        </table>
+        <div class="newbook">
+            <%= form_for(@book) do |f|%>
+            <p class="new-ttl">Title</p>
+            <%= f.text_field :title %>
+            <p class="body-ttl">Body</p>
+            <%= f.text_area :body %>
+            <%= f.submit "Create Book", class: "submit" %>
+            <% end %>
+        </div>
+    </div>
